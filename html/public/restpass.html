@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card card-register mx-auto mt-5">
+    <div class="card-header">Registrarse</div>
+      <div class="card-body">
+        <div id="_AJAX_REST_"></div>
+        <div onkeypress="return runScriptRest(event)">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="pass1">Contraseña</label>
+                <input class="form-control" id="pass1" type="password" aria-describedby="nameHelp" placeholder="Contraseña">
+              </div>
+              <div class="col-md-6">
+                <label for="pass2">Confirme contraseña</label>
+                <input class="form-control" id="pass2" type="password" aria-describedby="nameHelp" placeholder="Confirme contraseña">
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary btn-block" onclick="goRest()">Registrar</a>
+        </div>
+      </div>
+  </div>
+</div>
+<script src="./views/app/js/restpass.js"></script>

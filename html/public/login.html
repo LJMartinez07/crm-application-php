@@ -1,0 +1,34 @@
+
+
+<div class="container">
+    <div class="card card-login mx-auto mt-5">
+      <div class="card-header">Login</div>
+      <div class="card-body">
+         <div id="_AJAX_LOGIN_"></div>
+        <div onkeypress="return runScriptLogin(event)">
+          <div class="form-group">
+            <label for="user_login">Email</label>
+            <input class="form-control" id="user_login" type="email" aria-describedby="emailHelp" placeholder="Enter email" required/>
+            <!--<div class="invalidar" id="checkemail"></div>-->
+          </div>
+          <div class="form-group">
+            <label for="pass_login">Contraseña</label>
+            <input class="form-control" id="pass_login" type="password" placeholder="Contraseña">
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label" >
+                <input class="form-check-input" value="1"  id="session_login" type="checkbox" checked>Recordar contraseña</label>
+            </div>
+          </div>
+          <a class="btn btn-primary btn-block" onclick="goLogin()">Iniciar</a>
+        </div>
+        <div class="text-center">
+          <a class="d-block small mt-3" href="?view=loginemp">¡Soy empleado!</a>
+          <a class="d-block small " href="?view=reg">Registrarse</a>
+          <a class="d-block small" href="?view=lost">¿Olvide contraseña?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="views/app/js/login.js"></script>

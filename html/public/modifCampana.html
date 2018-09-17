@@ -1,0 +1,59 @@
+<div class="modal fade" id="Modifcampana" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar Campaña</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="_AJAX_MCAMPANA_"></div>
+        <div class="modal-body" onkeypress="return runScriptMCampana(event)">
+          <div class="row">
+            <div class="col">
+              <label for="nombre1">Nombre:*</label>
+              <input type="text" name="" id="id1" hidden>
+              <input type="text" id="nombre1" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="col">
+              <label for="estatus1">Estatus:*</label>
+              <select class="form-control" id="estatus1">
+                <option value="1">Activo</option>
+                <option value="0">Inactivo</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <label for="FechaI1">Fecha Inicio:*</label>
+              <input type="date" id="FechaI1" class="form-control" placeholder="Fecha Inicio">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <label for="FechaF1">Fecha Final:*</label>
+              <input type="date" id="FechaF1" class="form-control" placeholder="Fecha Final">
+            </div>
+            <div class="col">
+              <label for="recaudacion1">Recaudacion:</label>
+              <input type="text" id="recaudacion1" class="form-control" placeholder="Recaudacion">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <label for="descripcion1">Descripcion:*</label>
+              
+              <textarea  id="descripcion1" class="form-control" rows="4" placeholder="Descripción"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="goMCampana()">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>

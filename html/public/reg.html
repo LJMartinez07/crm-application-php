@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">Registrate</div>
+      <div class="card-body">
+
+        <div id="_AJAX_REG_"></div>
+
+        <div onkeypress="return runScriptReg(event)">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="reg_nombre">Nombre</label>
+                <input class="form-control" id="reg_nombre" type="text" aria-describedby="nameHelp" placeholder="Nombre">
+              </div>
+              <div class="col-md-6">
+                <label for="reg_apellido">Apellido</label>
+                <input class="form-control" id="reg_apellido" type="text" aria-describedby="nameHelp" placeholder="Apellido">
+              </div>
+            </div>
+          </div>
+                    <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="email_reg">Email</label>
+                <input class="form-control" id="email_reg" type="email" aria-describedby="nameHelp" placeholder="Email" required>
+                  <div class="invalidar" id="checkemail"></div>
+              </div>
+              <div class="col-md-6">
+                <label for="reg_tel">Telefono</label>
+                <input class="form-control" id="reg_tel" type="text" aria-describedby="nameHelp" placeholder="telefono">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="pass_reg">Contraseña</label>
+                <input class="form-control" id="pass_reg" type="password" placeholder="Contraseña">
+                  <div class="invalidar" id="checkpass"></div>
+              </div>
+              <div class="col-md-6">
+                <label for="pass_reg_dos">Confirmar Contraseña</label>
+                <input class="form-control" id="pass_reg_dos" type="password" placeholder="Confirmar Contraseña">
+              </div>
+              <div class="form-group form-check">
+                            <input type="checkbox" id="tyc_reg" checked class="form-check-input">
+                            <label class="form-check-label" for="tyc_reg">terminos y condiciones de uso </label>
+                          </div>
+            </div>
+          </div>
+          <a class="btn btn-primary btn-block" onclick="goReg()">Registrar</a>
+        </div>
+        <div class="text-center">
+          <a class="d-block small mt-3" href="?view=index">Iniciar sesion</a>
+          <a class="d-block small" href="?view=lost">¿Olvide Contraseña?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./views/app/js/reg.js"></script>

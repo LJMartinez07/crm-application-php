@@ -1,0 +1,51 @@
+<div class="modal fade" id="ModifContrato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar negociación</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="_AJAX_MCONTRATO_"></div>
+        <div class="modal-body" onkeypress="return runScriptModiContrato(event)">
+          <div class="row">
+            <div class="col">
+              <label for="nombre">Nombre de la Negociación:*</label>
+              <input type="text" name="" id="idContrato" hidden>
+              <input type="text" id="nombreContra" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="col">
+              <label for="tipoContra">Tipo: </label>
+              <select class="form-control" id="tipoContra">
+                <option value="Nuevo">Nuevo</option>
+                <option value="Existente">Existente</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <label for="cantidadContra">Cantidad de dinero:*</label>
+              <input type="text" id="cantidadContra" class="form-control" placeholder="Cantidad de dinero">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <label for="fechaContra">Fecha Final:*</label>
+              <input type="date" id="fechaContra" class="form-control" placeholder="Fecha Final">
+            </div>
+            <div class="col">
+              <label for="descripcionContra">Descripción:</label>
+              <textarea  id="descripcionContra" class="form-control" rows="4" placeholder="Descripción"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="goModiContrato()">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
