@@ -14,8 +14,8 @@ define('APP_URL', 'http://localhost/CRM/');
 
 #Contastes PHPMailer
 define('PHPMAILER_HOST', 'smtp.gmail.com');
-define('PHPMAILER_USER', 'pruebacrmlt@gmail.com');
-define('PHPMAILER_PASS', 'crm12345678');
+define('PHPMAILER_USER', '');
+define('PHPMAILER_PASS', '');
 define('PHPMAILER_PORT', 465);
 
 
