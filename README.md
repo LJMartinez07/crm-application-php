@@ -1,6 +1,3 @@
 # CRM
-I started my studies for create crm application, I applied mvc in php.
 
-For more information contact me: mrluismartinez28@gmail.com
-
---no profit
+In this project i started my investigation about crm for learn how this work, and looking how works salesforce, bitrix24 and some others y decide to start my own one, how was coding on php and js.
